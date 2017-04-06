@@ -994,7 +994,8 @@ input:checked + .form__label--color::after {
     border-left: 1px solid #ececec;
     -ms-flex-order: 1;
     order: 1;
-    padding-left: 85px;
+    padding-left: 80px;
+    width: 185px;
   }
   .page-header__item--basket a {
     margin-top: 31px;
