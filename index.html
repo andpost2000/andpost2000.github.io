@@ -10,50 +10,81 @@
 <body class="page">
   <header class="page-header">
     <div class="container">
-      <div class="logo"><img src="img/logo.svg" width="100" height="80" alt="Стильный дом"></div>
-      <nav class="page-header_nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Главная</a></li>
-          <li class="nav-item"><a href="#">Сип панели</a></li>
-          <li class="nav-item"><a href="#">Проекты</a></li>
-          <li class="nav-item"><a href="#">Цены</a></li>
-          <li class="nav-item"><a href="#">О нас</a></li>
-          <li class="nav-item"><a href="#">Контакты</a></li>
+      <a href="" class="logo">
+        <img src="img/logo.svg" width="150" height="120" alt="Стильный дом">
+      </a>
+      <nav class="page-header__nav">
+        <div class="page-header__nav-phone">
+          <span class="page-header__nav-phone--velcom">+375 (44) 763-97-40</span>
+          <span class="page-header__nav-phone--mts">+375 (29) 763-97-40</span>
+        </div>
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#">Главная</a></li>
+          <li class="navigation__item"><a href="#">Проекты</a></li>
+          <li class="navigation__item"><a href="#">Сип панели</a></li>
+          <li class="navigation__item"><a href="#">Цены</a></li>
+          <li class="navigation__item"><a href="#">О нас</a></li>
+          <li class="navigation__item"><a href="#">Контакты</a></li>
         </ul>
+        <!-- <ul class="additional-nav">
+  <li class="additional-nav__item"><a href="">Пенопласт</a></li>
+  <li class="additional-nav__item"><a href="">Пиломатериалы</a></li>
+  <li class="additional-nav__item"><a href="">Садовая мебель</a></li>
+  <li class="additional-nav__item"><a href="">Ограждения</a></li>
+  <li class="additional-nav__item"><a href="">Евровагонка</a></li>
+</ul>
+ -->
       </nav>
-      <div class="page-header_promo promo"></div>
     </div>
   </header>
   <main class="page-main">
-    <div class="container">
+    <div class="container container--main">
       <div class="features">
-        <ul class="features_list">
+        <ul class="features__list">
           <li class="features__item">
-            <img src="" alt="">
-            <h2 class="features_title"></h2>
-            <p class="features_description"></p>
-            <a href="#" class="features_btn btn"></a>
+            <a href="#">
+              <h2 class="features__title">Типовые проекты</h2>
+              <img src="img/dom.jpg" width="330" height="250" alt="">
+              <p class="features__description">Большой выбор каркасных домов</p>
+            </a>
           </li>
           <li class="features__item">
-            <img src="" alt="">
-            <h2 class="features_title"></h2>
-            <p class="features_description"></p>
-            <a href="#" class="features_btn btn"></a>
+            <a href="#">
+              <h2 class="features__title">СИП панели</h2>
+              <img src="img/sip.jpeg" width="330" height="250" alt="">
+              <p class="features__description">Панели высокого качества</p>
+            </a>
           </li>
           <li class="features__item">
-            <img src="" alt="">
-            <h2 class="features_title"></h2>
-            <p class="features_description"></p>
-            <a href="#" class="features_btn btn"></a>
+            <a href="#">
+              <h2 class="features__title">Пенопласт</h2>
+              <img src="img/penoplast.jpg" width="330" height="250" alt="">
+              <p class="features__description">Пенопласт собственного производства</p>
+            </a>
+          </li>
+          </li>
+          <li class="features__item">
+            <a href="#">
+              <h2 class="features__title">Пиломатериалы</h2>
+              <img src="img/woods.jpg" width="330" height="250" alt="">
+              <p class="features__description">Вагонка, брус, доска.</p>
+            </a>
+          </li>
+          <li class="features__item">
+            <a href="#">
+              <h2 class="features__title">Благоустройство</h2>
+              <img src="img/mebel.jpg" width="330" height="250" alt="">
+              <p class="features__description">Заборы, калитки, скамейки</p>
+            </a>
           </li>
         </ul>
       </div>
       <div class="reference">
-        <h2 class="reference_title">Немного теории</h2>
+        <h2 class="reference__title">Немного теории</h2>
         <dl>
           <dt>
-            <h3 class="reference_title">Каркасный дом</h3>
-            <i class="reference_source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BA%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC">wikipedia</a></i>
+            <h3 class="reference__title">Каркасный дом</h3>
+            <i class="reference__source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BA%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC">wikipedia</a></i>
           </dt>
           <dd>
             <img src="img/article-1.jpg" alt="Каркасный дом" width="100" height="100">
@@ -61,7 +92,7 @@
           </dd>
           <dt>
             <h3 class="reference-title">СИП панели</h3>
-            <i class="reference-source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C">wikipedia</a></i>
+            <i class="reference-source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F__%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C">wikipedia</a></i>
             </i>
           </dt>
           <dd>
@@ -71,45 +102,45 @@
         </dl>
       </div>
       <div class="goods">
-        <div class="goods_item">
-          <h2 class="goods_title"></h2>
-          <p class="goods_description"></p>
-          <a href="#" class="goods_btn btn"></a>
+        <div class="goods__item">
+          <h2 class="goods__title"></h2>
+          <p class="goods__description"></p>
+          <a href="#" class="goods__btn btn"></a>
         </div>
-        <div class="goods_item">
-          <h2 class="goods_title"></h2>
-          <p class="goods_description"></p>
-          <a href="#" class="goods_btn btn"></a>
+        <div class="goods__item">
+          <h2 class="goods__title"></h2>
+          <p class="goods__description"></p>
+          <a href="#" class="goods__btn btn"></a>
         </div>
-        <div class="goods_item">
-          <h2 class="goods_title"></h2>
-          <p class="goods_description"></p>
-          <a href="#" class="goods_btn btn"></a>
+        <div class="goods__item">
+          <h2 class="goods__title"></h2>
+          <p class="goods__description"></p>
+          <a href="#" class="goods__btn btn"></a>
         </div>
-        <div class="goods_item">
-          <h2 class="goods_title"></h2>
-          <p class="goods_description"></p>
-          <a href="#" class="goods_btn btn"></a>
+        <div class="goods__item">
+          <h2 class="goods__title"></h2>
+          <p class="goods__description"></p>
+          <a href="#" class="goods__btn btn"></a>
         </div>
-        <div class="goods_item">
-          <h2 class="goods_title"></h2>
-          <p class="goods_description"></p>
-          <a href="#" class="goods_btn btn"></a>
+        <div class="goods__item">
+          <h2 class="goods__title"></h2>
+          <p class="goods__description"></p>
+          <a href="#" class="goods__btn btn"></a>
         </div>
       </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="container">
-      <div class="logo"><img src="img/logo.jpg" alt="Стильный дом"></div>
-      <nav class="page-header_nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Главная</a></li>
-          <li class="nav-item"><a href="#">Сип панели</a></li>
-          <li class="nav-item"><a href="#">Проекты</a></li>
-          <li class="nav-item"><a href="#">Цены</a></li>
-          <li class="nav-item"><a href="#">О нас</a></li>
-          <li class="nav-item"><a href="#">Контакты</a></li>
+      <div class="logo"><img src="img/logo.svg" width="200" height="160" alt="Стильный дом"></div>
+      <nav class="page-footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#">Главная</a></li>
+          <li class="navigation__item"><a href="#">Сип панели</a></li>
+          <li class="navigation__item"><a href="#">Проекты</a></li>
+          <li class="navigation__item"><a href="#">Цены</a></li>
+          <li class="navigation__item"><a href="#">О нас</a></li>
+          <li class="navigation__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
