@@ -1,12 +1,56 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: 800;
+  src: url("../font/cuprum.woff2");
+  /* разные файлы */
+  font-family: 'cuprum';
+  /* название одно */
+  font-style: normal;
+  font-weight: 400;
+  /* разная плотность */
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
-  font-weight: 300;
+  src: url("../font/cuprumbold.woff2");
+  /* разные файлы */
+  font-family: 'cuprum';
+  /* название одно */
+  font-style: normal;
+  font-weight: 700;
+  /* разная плотность */
+}
+@font-face {
+  src: url("../font/ptsans.woff2");
+  /* разные файлы */
+  font-family: 'ptsans';
+  /* название одно */
+  font-style: normal;
+  font-weight: 400;
+  /* разная плотность */
+}
+@font-face {
+  src: url("../font/ptsansbold.woff2");
+  /* разные файлы */
+  font-family: 'ptsans';
+  /* название одно */
+  font-style: normal;
+  font-weight: 700;
+  /* разная плотность */
+}
+@font-face {
+  src: url("../font/cuprumitalic.woff2");
+  /* разные файлы */
+  font-family: 'cuprum';
+  /* название одно */
+  font-style: italic;
+  font-weight: 400;
+  /* разная плотность */
+}
+@font-face {
+  src: url("../font/cuprumbolditalic.woff2");
+  /* разные файлы */
+  font-family: 'cuprum';
+  /* название одно */
+  font-style: italic;
+  font-weight: 700;
+  /* разная плотность */
 }
 @font-face {
   font-family: "OpenSans";
@@ -73,25 +117,57 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: #f2f2f2;
 }
+.logo {
+  text-decoration: none;
+  background-color: #E3643;
+}
+.logo img {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo__title {
+  padding-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  text-transform: uppercase;
+}
+.logo.navigation__item-link {
+  background-color: #EE3643;
+}
+.slides {
+  padding-top: 25px;
+}
+.slide {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.slide__title {
+  margin: 20px;
+  text-align: center;
+  font-family: 'cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.slide__title b {
+  display: block;
+  font-size: 32px;
+}
+.slide__description {
+  margin: 0 20px;
+  text-indent: 40px;
+  text-align: justify;
+}
 .page-header {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #9B2A0C;
-  background-image: url(../img/bg.jpg);
+  background-color: #32425C;
   box-shadow: 0px 0 8px rgba(0, 0, 0, 0.5);
 }
 .page-header__nav {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  width: 80%;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .page-header__nav-phone {
   display: -ms-flexbox;
@@ -142,6 +218,9 @@
 .navigation__item {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.navigation__item:first-child a {
+  padding: 0 15px;
+}
 .navigation__item:hover {
   box-shadow: 0 3px 5px 0px #fff, 0 -3px 5px 0px #fff;
   background-color: rgba(0, 0, 0, 0.6);
@@ -150,22 +229,22 @@
   color: #fff;
 }
 .navigation__item:active {
-  opacity: 0.5;
+  opacity: 0.8;
   box-shadow: 0 1px 3px 0px #fff, 0 -1px 3px 0px #fff;
 }
 .navigation__item:first-child a {
   border-left: 1px solid rgba(186, 163, 96, 0.5);
 }
-.navigation a {
+.navigation__item-link {
   display: block;
   padding: 15px 20px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  border-right: 1px solid rgba(186, 163, 96, 0.5);
+  border-right: 1px solid rgba(186, 163, 96, 0.7);
 }
 .additional-nav {
   list-style: none;
@@ -237,4 +316,13 @@
 .features__description {
   margin: 0;
   padding: 10px 20px;
+}
+.reference dd {
+  display: -ms-flexbox;
+  display: flex;
+}
+.reference p {
+  width: 400px;
+  margin-right: 20px;
+  font-size: 20px;
 }
