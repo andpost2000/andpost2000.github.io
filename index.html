@@ -12,11 +12,6 @@
   <header class="page-header">
     <div class="container">
       <nav class="page-header__nav">
-        <!-- <div class="page-header__nav-phone">
-  <span class="page-header__nav-phone--velcom">+375 (44) 763-97-40</span>
-  <span class="page-header__nav-phone--mts">+375 (29) 763-97-40</span>
-</div>
- -->
         <ul class="navigation">
           <li class="navigation__item">
             <a href="" class="logo navigation__item-link">
@@ -44,12 +39,34 @@
   <main class="page-main">
     <div class="container container--main">
       <div class="slides">
+        <input type="radio" name="slide" id="slide-1" checked>
+        <input type="radio" name="slide" id="slide-2">
+        <input type="radio" name="slide" id="slide-3">
+        <div class="slides__toggle">
+          <label class="slides__toggle-btn slides__toggle-btn-1" for="slide-1"></label>
+          <label class="slides__toggle-btn slides__toggle-btn-2" for="slide-2"></label>
+          <label class="slides__toggle-btn slides__toggle-btn-3" for="slide-3"></label>
+        </div>
         <div class="slide slide-1">
+          <div class="slide__text">
+            <h2 class="slide__title">Строительство каркасных домов под ключ<b>"Стильный&nbsp;дом"</b></h2>
+            <p class="slide__description">Индивидуальный подход к каждому клиенту. Мы строим быстро и качественно. Оказывая комплекс услуг, по заливке фундамента, возведения дома и установки ограды."Стильный дом" располагает собственным производством, это позволяет уменьшить цену.</p>
+          </div>
+          <img src="img/slide-dom.jpg" alt="" width="830" height="300" class="slide__image">
+        </div>
+        <div class="slide slide-2">
           <div class="slide__text">
             <h2 class="slide__title">Собственное производство СИП панелей<b>"Стильный&nbsp;дом"</b></h2>
             <p class="slide__description">В наших панелях применяется, высококачественный пенопласт, собственного производства. OSB плита премиум класса, пропитана особой влагооталкивающей смесью. По этому плиты нашего производства имеют длительный срок службы. Также мы предоставляем гарантию качества.</p>
           </div>
-          <img src="img/sip2.jpg" alt="" width="830" class="slide__image">
+          <img src="img/slide-sipwork.jpg" alt="" width="830" height="300" class="slide__image">
+        </div>
+        <div class="slide slide-3">
+          <div class="slide__text">
+            <h2 class="slide__title">Собственное производство пенопласта<b>"Стильный&nbsp;дом"</b></h2>
+            <p class="slide__description">В наших панелях применяется, высококачественный пенопласт, собственного производства. OSB плита премиум класса, пропитана особой влагооталкивающей смесью. По этому плиты нашего производства имеют длительный срок службы. Также мы предоставляем гарантию качества.</p>
+          </div>
+          <img src="img/slide-penoplast.jpg" alt="" width="830" height="300" class="slide__image">
         </div>
       </div>
       <div class="features">
@@ -100,18 +117,19 @@
             <i class="reference__source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BA%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC">wikipedia</a></i>
           </dt>
           <dd>
-            <p>Каркасный дом — это легковозводимая конструкция. Каркасное домостроение является основным типом малоэтажного строительства в Скандинавии, Финляндии, Германии, США. Каркасные технологии в деревянном домостроении в Европе и Скандинавии популярны более пяти веков. По этой технологии строились и продолжают возводиться не только частные дома, но и трёх-, и четырёхэтажные большие многофункциональные здания.</p>
+            <p>Каркасный дом — это легковозводимая конструкция. Каркасное домостроение является основным типом малоэтажного строительства в Скандинавии, Финляндии, Германии, США. Каркасные технологии в деревянном домостроении в Европе и Скандинавии популярны более пяти веков. По этой технологии строились и продолжают возводиться не только частные дома, но и трёх, и четырёхэтажные большие многофункциональные здания.</p>
             <img src="img/stroit-dom.jpg" alt="Каркасный дом" width="700" height="300">
           </dd>
-          <dt>
-            <h3 class="reference-title">СИП панели</h3>
-            <i class="reference-source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F__%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C">wikipedia</a></i>
-            </i>
-          </dt>
-          <dd>
-            <img src="img/article-2.jpg" alt="Сип панели" width="100" height="100">
-            <p>Панель состоит из двух ориентированно-стружечных плит (ОСП или OSB), между которыми под давлением приклеивается слой твердого утеплителя (пенополистирола), либо под давлением закачивается пенополиуретан (PUR). СИП отличаются от остальных видов строительных плит из древесины тем, что для их изготовления используют не отходы деревообрабатывающего производства, а древесину высокого качества, которую расщепляют до отдельных волокон в заводских условиях. В результате получаются щепки, толщина которых составляет 0,5 см, а длина — около 15 см. Их укладывают слоями в определенной последовательности, чтобы обеспечить высокую прочность.</p>
-          </dd>
+          <!-- <dt class="1">
+  <h3 class="reference-title">СИП панели</h3>
+  <i class="reference-source">источник: <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F__%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C">wikipedia</a></i>
+  </i>
+</dt>
+<dd>
+  <img src="img/article-2.jpg" alt="Сип панели" width="100" height="100">
+  <p>Панель состоит из двух ориентированно-стружечных плит (ОСП или OSB), между которыми под давлением приклеивается слой твердого утеплителя (пенополистирола), либо под давлением закачивается пенополиуретан (PUR). СИП отличаются от остальных видов строительных плит из древесины тем, что для их изготовления используют не отходы деревообрабатывающего производства, а древесину высокого качества, которую расщепляют до отдельных волокон в заводских условиях. В результате получаются щепки, толщина которых составляет 0,5 см, а длина — около 15 см. Их укладывают слоями в определенной последовательности, чтобы обеспечить высокую прочность.</p>
+</dd>
+ -->
         </dl>
       </div>
       <div class="goods">
@@ -145,17 +163,23 @@
   </main>
   <footer class="page-footer">
     <div class="container">
-      <div class="logo"><img src="img/logo.svg" width="200" height="160" alt="Стильный дом"></div>
-      <nav class="page-footer__nav">
-        <ul class="navigation">
-          <li class="navigation__item"><a href="#">Главная</a></li>
-          <li class="navigation__item"><a href="#">Сип панели</a></li>
-          <li class="navigation__item"><a href="#">Проекты</a></li>
-          <li class="navigation__item"><a href="#">Цены</a></li>
-          <li class="navigation__item"><a href="#">О нас</a></li>
-          <li class="navigation__item"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="page-fooer__logo">
+        <a href="" class="logo navigation__item-link">
+          <img src="img/logo-2.svg" width="100" height="60" alt="Стильный дом"><span class="logo__title">Стильный дом</span>
+        </a>
+      </div>
+      <div class="page-footer__contacts">
+        <p>Беларусь, Виттебская обл.,
+          <br> г. Поставы, ул. Космонавтов д. 26 <sup>Б</sup></p>
+      </div>
+      <div class="page-footer__phone">
+        <span class="page-footer__phone--velcom">+375 (44) 763-97-40</span>
+        <span class="page-footer__phone--mts">+375 (29) 763-97-40</span>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано-
+        <a href="#">andpost2000</a>
+      </div>
     </div>
   </footer>
 </body>
