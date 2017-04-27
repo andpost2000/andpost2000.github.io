@@ -154,7 +154,7 @@
   font-size: 0;
   position: absolute;
   bottom: 35px;
-  left: 550px;
+  left: 50%;
   z-index: 5;
   background-color: #fff;
   box-shadow: 0 0 8px #000;
@@ -201,13 +201,17 @@
 }
 #slide-1:checked ~ .slide-1,
 #slide-2:checked ~ .slide-2,
-#slide-3:checked ~ .slide-3 {
+#slide-3:checked ~ .slide-3,
+#slide-4:checked ~ .slide-4,
+#slide-5:checked ~ .slide-5 {
   transform: scaleX(1);
 }
 #slide-1:checked ~ .slides__toggle .slides__toggle-btn-1,
 #slide-2:checked ~ .slides__toggle .slides__toggle-btn-2,
-#slide-3:checked ~ .slides__toggle .slides__toggle-btn-3 {
-  background-color: red;
+#slide-3:checked ~ .slides__toggle .slides__toggle-btn-3,
+#slide-4:checked ~ .slides__toggle .slides__toggle-btn-4,
+#slide-5:checked ~ .slides__toggle .slides__toggle-btn-5 {
+  background-image: linear-gradient(#f55, #f00, #f55);
 }
 .page-header {
   position: relative;
@@ -229,6 +233,7 @@
   margin-left: auto;
 }
 .navigation__item {
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .navigation__item:first-child a {
@@ -250,6 +255,7 @@
 }
 .navigation__item-link {
   display: block;
+  box-sizing: border-box;
   padding: 15px 20px;
   font-family: 'cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
