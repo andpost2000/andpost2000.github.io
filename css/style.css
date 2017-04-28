@@ -1,23 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  src: url("../fonts/cuprum.woff2");
-  /* разные файлы */
-  font-family: 'cuprum';
-  /* название одно */
-  font-style: normal;
-  font-weight: 400;
-  /* разная плотность */
-}
-@font-face {
-  src: url("../fonts/cuprumbold.woff2");
-  /* разные файлы */
-  font-family: 'cuprum';
-  /* название одно */
-  font-style: normal;
-  font-weight: 700;
-  /* разная плотность */
-}
-@font-face {
   src: url("../fonts/ptsans.woff2");
   /* разные файлы */
   font-family: 'ptsans';
@@ -332,23 +314,23 @@
   width: 20px;
   height: 20px;
   font-family: "slick";
-  font-size: 20px;
+  font-size: 15px;
   line-height: 20px;
   text-align: center;
-  color: red;
+  color: black;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: red;
+  color: black;
   opacity: 0.75;
 }
 .page {
   padding: 0;
   margin: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background-color: #f2f2f2;
+  background: url(../img/background-body.gif) 0 0 repeat #ccc;
 }
 .logo {
   text-decoration: none;
@@ -429,6 +411,10 @@
   text-indent: 40px;
   text-align: justify;
 }
+.slides .slide img {
+  width: 830px;
+  height: 300px;
+}
 #slide-1:checked ~ .slide-1,
 #slide-2:checked ~ .slide-2,
 #slide-3:checked ~ .slide-3,
@@ -446,7 +432,7 @@
 .page-header {
   position: relative;
   z-index: 10;
-  background-color: #32425C;
+  background-color: #E7FEFC;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
 }
 .page-header__nav {
@@ -464,21 +450,19 @@
 }
 .navigation__item {
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .navigation__item:first-child a {
   padding: 0 15px;
 }
 .navigation__item:hover {
-  box-shadow: 0 3px 5px 0px #fff, 0 -3px 5px 0px #fff;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .navigation__item:hover a {
   color: #fff;
 }
 .navigation__item:active {
-  opacity: 0.8;
-  box-shadow: 0 1px 3px 0px #fff, 0 -1px 3px 0px #fff;
+  opacity: 0.7;
 }
 .navigation__item:first-child a {
   border-left: 1px solid rgba(186, 163, 96, 0.5);
@@ -490,7 +474,7 @@
   font-family: 'cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   border-right: 1px solid rgba(186, 163, 96, 0.7);
@@ -529,6 +513,9 @@
   text-decoration: none;
   text-transform: uppercase;
   border-right: 1px solid rgba(186, 163, 96, 0.5);
+}
+.features {
+  background-color: #ddd;
 }
 .features__list {
   list-style: none;
