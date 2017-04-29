@@ -3,8 +3,9 @@ $(document).ready(function() {
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,arrows: false,
-
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
     autoplay: true,
     autoplaySpeed: 5000
   });
@@ -14,7 +15,6 @@ $(document).ready(function() {
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  fade: true,
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
