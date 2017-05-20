@@ -1,3 +1,4 @@
+// slider function
 $(document).ready(function() {
   $('#slider').slick({
     dots: true,
@@ -7,7 +8,7 @@ $(document).ready(function() {
     arrows: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 3500
   });
 });
 
